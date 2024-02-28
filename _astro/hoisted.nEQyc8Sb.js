@@ -1,0 +1,1 @@
+import"./hoisted.nggcWpD6.js";class c extends HTMLElement{constructor(){super();const t=this.querySelector(".accordion-toggle"),e=this.querySelector(".code-content"),o=t.querySelector(".chevron-icon");t.addEventListener("click",()=>{e.classList.toggle("hidden"),o.classList.toggle("rotate-0")})}}customElements.define("astro-accordion",c);

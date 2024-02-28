@@ -1,0 +1,45 @@
+<!DOCTYPE html><html class="theme-newspaper dark" lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Blogster"><!-- <Favicon /> --><!-- <slot name="meta" /> --><!-- <GoogleFont /> --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const storageTheme = sessionStorage.getItem("theme");
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#ffffff";
+      }
+    }
+  })();
+</script><link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet"><link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet"><link href="/fontawesome/css/solid.min.css" rel="stylesheet"><link rel="stylesheet" href="/_astro/about.mnngu0Db.css" /><script type="module" src="/_astro/hoisted.nggcWpD6.js"></script></head> <body>  <div class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8"> <header class="w-[calc(100vw - 24rem)]" data-astro-cid-3ef6ksr2> <a class="unset absolute z-10 left-[50%] -top-[100rem] translate-x-[-50%] bg-white text-black px-8 py-2 focus:top-[initial]" href="#main" data-astro-cid-3ef6ksr2>
+Skip to content
+</a> <nav class="flex w-full" data-astro-cid-3ef6ksr2> <section class="text-text-bold" data-astro-cid-3ef6ksr2> <ul class="unset flex gap-4 [&>li]:p-0" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2><!-- DO NOT FORMAT. IT ADDS AN EXTRA SPACE ON RENDERED CONTENT. --><a href="/" class="show unset animated-link" data-astro-cid-3ef6ksr2>Home</a></li> </ul> </section> <section class="ml-auto space-x-2" data-astro-cid-3ef6ksr2> <!-- DO NOT FORMAT. IT ADDS AN EXTRA SPACE ON RENDERED CONTENT. --><a href="/about" class="unset animated-link" data-astro-cid-3ef6ksr2> About </a> <a href="https://github.com/thomasgauthier" class="unset" data-astro-cid-3ef6ksr2> <i class="fa-brands fa-github" data-astro-cid-3ef6ksr2></i> </a> <a href="https://twitter.com/thomasgauthierc/" class="unset" data-astro-cid-3ef6ksr2> <i class="fa-brands fa-twitter" data-astro-cid-3ef6ksr2></i> </a> </section> </nav> <!-- <div
+    class="justify-self-end flex items-center content-center text-text-bold"
+  >
+    <DarkModeToggle />
+  </div> --> </header>  <main id="main"> <section class="blog-post prose max-w-none prose-newspaper"> <h1 class="m-0 pt-1 mb-[0.375em] after:mt-6 after:content-[''] after:block after:h-[1px] after:w-[100%] after:border-b-[1px] after:border-current"> Thomas Gauthier-Caron&#39;s blog </h1>  <p>Hey there! I’m Thomas Gauthier-Caron. I’m a tinkerer hacking on large language models. On this blog you will find educational content, dev logs and maybe think pieces if I ever find the time for that.</p>
+<p>My old website from another life can be found <a href="https://thomasgauthier.me">here</a>.</p>
+<p>Here is a couple of my most recent post:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Date</th><th>Category</th><th>Title</th></tr></thead><tbody><tr><td>28/02/24</td><td>Dev log</td><td><a href="/devlog/nvc">Creating a high quality synthetic dataset with open models and a $10 budget</a></td></tr></tbody></table> </section> </main> <footer class="text-sm leading-[1.75] mt-4" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte></div> </footer>  </div> </body></html>
